@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 final TextEditingController emailController = TextEditingController();
 final TextEditingController passwordController = TextEditingController();
@@ -42,6 +43,7 @@ class LoginPage extends StatelessWidget {
           shrinkWrap: true,
           padding: EdgeInsets.only(left: 30, right: 30),
           children: [
+            Lottie.asset('assets/lottie/login_animation.json'),
             TextField(
               controller: emailController,
               decoration: InputDecoration(
